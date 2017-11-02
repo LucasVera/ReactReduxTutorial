@@ -1,0 +1,12 @@
+Tutorial URL: http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html
+
+APP STATE
+Refers to 'whats going on in you app at any given time'. For example,
+angular state is in Factories and Services. In redux, state is stored
+into one single 'tree structure', which is a structure formed out of
+maps and arrays. State is pure data, nothing to do with the apps 
+behavior. It's a good practice to have an idea of how the state tree
+should look like before starting to code.
+
+
+
