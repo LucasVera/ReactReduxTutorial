@@ -9,4 +9,25 @@ behavior. It's a good practice to have an idea of how the state tree
 should look like before starting to code.
 
 
+REDUX
+the main advantage of using redux is that application state is immutable.
+This means that application tree doesnt change. What is done is create
+a completly new tree (which can inherit from the previous one). This
+means that redux works purely on functions that take data and return data
+which are predictable and will always return the same result if the same
+data is entered.
+It lets you walk back in time with no pain and return the app to
+previous states with ease.
+
+
+IMMUTABLE DATA:
+the simplest example is a counter. it changes from 0 to 1 to 2, etc. 
+however, a new number is assigned every time, since we cant mutate
+a number to become another number (you cant use 42.setValue(43))
+which means that the counter increment can be extracted to a pure
+function that takes a number, adds one and returns a new number
+the immutable library offers a full api to work easily with immutable
+variables, objects, arrays, maps, etc (although is not required
+to work with redux, you could simply use plain JS and avoid mutating
+the objects).
 
